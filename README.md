@@ -78,7 +78,7 @@ In the Current Starved Differential VCO, the delay stages are replaced by differ
 Coming to the working of the current starved differential VCO when the control voltage is above threshold voltage the MOSFET M5 starts conducting and the current mirror MOSFETs M1, M2, M3, M4 comes into active region. Also the differential inverter switched on because the MOSFETs M1,M2,M3,M4 start conducting. In the CSDVCO the out+ -> in- -> out- ->  in+ -> out+ -> in+ form a loop and the other set forms another loop. The input keeps on inverting from one stage to the next and hence the VCO starts generating oscillations. And as the control voltage increases the frequency of oscillations also increases linearly as in the case of a conventional VCO.
 </p>
 <p align="center">
-  <img src="Images/differential_end_CSVCO.PNG">
+  <img src="Images/differential_end_CSVCO.png">
   Fig. 3: Differential End Current Starved VCO
 </p>
 
@@ -100,29 +100,29 @@ Coming to the working of the current starved differential VCO when the control v
 ### Differential Delay Cell:
 Initially Schematic of the Differential Delay cell was implemented and converted into a symbol so that it could be used directly as delay cell from the library.
 <p align="center">
-  <img src="Images/differential_delay_cell_schematic.PNG">
+  <img src="Images/differential_delay_cell_schematic.png">
   Fig. 4: Differential Delay Cell Schematic
 </p>
 <p align="center">
-  <img src="Images/differential_delay_cell_symbol.PNG">
+  <img src="Images/differential_delay_cell_symbol.png">
   Fig. 5: Differential Delay Cell Symbol
 </p>
 
 ### Buffer:
 This component is used to convert the generated sine wave to a proper square pulse and is placed at the output of the VCO. This is nothing but a couple of inverters placed in series. 
 <p align="center">
-  <img src="Images/buffer_schematic.PNG">
+  <img src="Images/buffer_schematic.png">
   Fig. 6: Buffer Schematic
 </p>
 <p align="center">
-  <img src="Images/buffer_symbol.PNG">
+  <img src="Images/buffer_symbol.png">
   Fig. 7: Buffer Symbol
 </p>
 
 ### Differential End Current Starved VCO:
 The schematic of Differential End CSVCO has been created using the above cells and a few transistors as shown in the below figure.
 <p align="center">
-  <img src="Images/differential_CSVCO_schematic.PNG">
+  <img src="Images/differential_CSVCO_schematic.png">
   Fig. 8: Differential End Current Starved VCO Schematic
 </p>
 
@@ -131,19 +131,19 @@ The schematic of Differential End CSVCO has been created using the above cells a
 After creating and saving the schematic go to 'Tools' and open 'Primewave' to start the simulation. In the Primewave select the 'model file' i.e the '28nm PDK's .lib file presentin the HSPICE folder. After this select the 'tran' analysis in the analysis window and give the 'Start', 'Stop', and 'Step Size' parameters and save it. Then add the outputs which needs to be plotted by selecting the nets on the schematic.</br>
 One other thing we need to keep in mind is that here we have loop for which an initial condition needs to be declared. For that, we have to go to 'Setup -> Convergance aids' and select the net for which we want to set an initial condition.Then go to 'Simulations -> Netlist and Run' to generate a netlist and run the simulation to get the below output.
 <p align="center">
-  <img src="Images/differential_CSVCO_tran.PNG">
+  <img src="Images/differential_CSVCO_tran.png">
   Fig. 9: Differential End Current Starved VCO Transient Analysis
 </p>
 The output frequency for the above graph is 'fout = 12.406 GHz' ('Vctrl = 500mV' and 'Vsupp = 1.2V')
 ### Parametric Sweep:
 This is basically used to plot any output attribute over varying input attribute. Specific to this design we are going to vary the control voltage and supply voltage to plot the varying frequency. For this, in the schematic we have to give a variable in the 'DC Voltage' parameter of the VDC components. Then add this variables in the Primewave under variables window and select 'sweep' in that window for each variable. In the parametric sweep window give the 'Start', 'Stop' and 'Step Size'. In the outputs add the function to calculate frequency and run the simulation to get the below output.
 <p align="center">
-  <img src="Images/parametric_sweep_one variable.PNG">
+  <img src="Images/parametric_sweep_one variable.png">
   Fig. 10: Control Voltage vs Frequency graph for 1.2V Supply Voltage.
 </p>
 
 <p align="center">
-  <img src="Images/parametric_sweep.PNG">
+  <img src="Images/parametric_sweep.png">
   Fig. 10: Control Voltage vs Frequency graph for varying Supply Voltage.
 </p>
 
