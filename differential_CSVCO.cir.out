@@ -1,0 +1,89 @@
+*  Generated for: PrimeSim
+*  Design library name: th_analog_circuits
+*  Design cell name: th_differential_csvco_with_footer
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+.param vctrl=500m vsupp=1.2
+*Custom Compiler Version S-2021.09
+*Mon Feb 21 10:00:40 2022
+
+.global gnd!
+********************************************************************************
+* Library          : th_analog_circuits
+* Cell             : th_differential_inverter
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt th_differential_inverter vdd vgn vgp vin+ vin- vout+ vout- gnd_1
+xm1 vout- vin- vdd vgp p105 w=0.1u l=0.03u nf=1 m=1
+xm0 vout+ vin+ vdd vgp p105 w=0.1u l=0.03u nf=1 m=1
+xm3 vout- vin- gnd_1 vgn n105 w=0.1u l=0.03u nf=1 m=1
+xm2 vout+ vin+ gnd_1 vgn n105 w=0.1u l=0.03u nf=1 m=1
+.ends th_differential_inverter
+
+********************************************************************************
+* Library          : th_analog_circuits
+* Cell             : th_buffer
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt th_buffer vdd gnd_1 in out
+xm1 out net16 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm0 net16 in vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm3 out net16 gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm2 net16 in gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+.ends th_buffer
+
+********************************************************************************
+* Library          : th_analog_circuits
+* Cell             : th_differential_csvco_with_footer
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xm7 net27 net12 gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm6 net23 net12 gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm5 net19 net12 gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm0 net5 net12 gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm4 net4 net5 net1 net1 p105 w=0.1u l=0.03u nf=1 m=1
+xm3 net8 net5 net1 net1 p105 w=0.1u l=0.03u nf=1 m=1
+xm2 net11 net5 net1 net1 p105 w=0.1u l=0.03u nf=1 m=1
+xm1 net5 net5 net1 net1 p105 w=0.1u l=0.03u nf=1 m=1
+xi7 net4 gnd! net1 net6 net7 net3 net2 net27 th_differential_inverter
+xi6 net8 gnd! net1 net9 net10 net7 net6 net23 th_differential_inverter
+xi5 net11 gnd! net1 net3 net2 net10 net9 net19 th_differential_inverter
+v9 net12 gnd! dc='vctrl'
+v8 net1 gnd! dc='vsupp'
+xi13 net1 gnd! net2 out- th_buffer
+xi12 net1 gnd! net3 out+ th_buffer
+
+
+
+
+
+
+
+
+.tran '10p' '2n' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(net2) v(net3) v(out+) v(out-)
+
+.temp 25
+
+.ic  v(net3)=0  v(net2)=0.8
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
