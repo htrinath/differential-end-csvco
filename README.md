@@ -11,6 +11,8 @@ This repository presents the design of Differential End CSVCO implemented using 
  * [Netlist of the Circuit](#Netlist-of-the-Circuit)
  * [Observations](#Observations)
  * [Author](#Author)
+ * [Acknowledgements](#Acknowledgements)
+ * [References](#References)
 
 
 # Introduction:
@@ -152,9 +154,18 @@ This is basically used to plot any output attribute over varying input attribute
 Refer to the netlist of the circuit here: <a href='differential_CSVCO.cir.out'>Netlist</a>
 
 # Observations:
-• Maximum frequency obtained for Supply voltage of 1.2V is around 22 GHz
-• As expected the bias current flowing into the delay stages is increasing as the the control voltage is increasing.
-• Also as expected the VCO's output frequency is increasing as the control voltage is increasing.
+• Maximum frequency obtained for Supply voltage of 1.2V is around 22 GHz</br>
+• As expected the bias current flowing into the delay stages is increasing as the the control voltage is increasing.</br>
+• Also as expected the VCO's output frequency is increasing as the control voltage is increasing.</br>
 
 # Author:
 Trinath Harikrishna, B.Tech(ECE), SRM Institute of Science and Technology, Kattankulattur, Chennai-603203.
+
+# Acknowledgements:
+• <a href='https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/'>Cloud Based Analog IC Design Hackathon</a>
+• <a href='https://www.synopsys.com/'>Synopsys India</a>
+• <a href='https://www.vlsisystemdesign.com/'>VLSI System Design (VSD) Corp. Pvt. Ltd India</a>
+
+# References:
+[1] B. Razavi. A 2-GHz 1.6-mW phase-locked loop. IEEE Journal of Solid-State Circuits 1997; 32 (5): 730-735.
+[2] R.Rahul and R.Thilagavathy, "A low phase noise CMOS voltage-controlled differential ring oscillator,"ICCICCT,2014
