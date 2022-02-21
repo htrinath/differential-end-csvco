@@ -1,16 +1,16 @@
 # Differential End Current Starved Voltage Controlled Oscillator (VCO)
 
-This repository presents the design of Differential End CSVCO implemented using Synopsis Custom Compiler on 28nm CMOs Technology.
+This repository presents the design of Differential End CSVCO implemented using Synopsis Custom Compiler on 28nm CMOS Technology.
 
 # Table of Contents
-* [Introduction](#Introduction)
-* [Current Starving Technique](#Current Starving Technique)
-* [Differential End Current Starved VCO](#Differential End Current Starved VCO)
-* [Tools Used](#Tools Used)
-* [Pre-Layout Schematics and Simulations](#Pre-Layout Schematics and Simulations)
-* [Netlist of the Circuit](#Netlist of the Circuit)
-* [Observations](#Observations)
-* [Author](#Author)
+ * [Introduction](#Introduction)
+ * [Current Starving Technique](#Current-Starving-Technique)
+ * [Differential End Current Starved VCO](#Differential-End-Current-Starved-VCO)
+ * [Tools Used](#Tools-Used)
+ * [Pre-Layout Schematics and Simulations](#Pre-Layout-Schematics-and-Simulations)
+ * [Netlist of the Circuit](#Netlist-of-the-Circuit)
+ * [Observations](#Observations)
+ * [Author](#Author)
 
 
 # Introduction:
@@ -144,12 +144,12 @@ This is basically used to plot any output attribute over varying input attribute
 
 <p align="center">
   <img src="Images/parametric_sweep.png"></br>
-  Fig. 10: Control Voltage vs Frequency graph for varying Supply Voltage.
+  Fig. 11: Control Voltage vs Frequency graph for varying Supply Voltage.
 </p>
 
 # Netlist for the Circuit:
 
-Refer to the netlist of the circuit here: 
+Refer to the netlist of the circuit here: <a src='differential_end_CSVCO.cir.out'>Netlist</a>
 
 # Observations:
 • Maximum frequency obtained for Supply voltage of 1.2V is around 22 GHz
