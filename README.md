@@ -60,10 +60,10 @@ So, the final equation will look like,
            f = Id/(N*Ctotal*Vdd )
            
     Where, f = Frequency of oscillation of VCO,
-	         N = Number of stages of delay in VCO,
-	         Ctotoal	=	Total internal capacitance of the circuit,
-	         Vdd	=	Supply voltage of the circuit,
-	         Id	=	Drain Current of the MOSFET
+	   N = Number of stages of delay in VCO,
+	   Ctotal = Total internal capacitance of the circuit,
+	   Vdd = Supply voltage of the circuit,
+	   Id = ain Current of the MOSFET
 
 
 # Differential End Current Starved VCO:
@@ -74,10 +74,10 @@ The fig. 2 represents the differential inverter in which M1 and M2 form an inver
   Fig. 2: Differential Delay Cell
 </p>
 <p>
-In the Current Starved Differential VCO, the delay stages are replaced by differential delay cells. The current starved Differential VCO is shown in Fig. The bottom two NMOS in the delay forms the pull-down network. M4, M5, M6, M7 forms one delay cell. The three number of delay cells are used to build a VCO to increase the oscillation frequency and gain. By using differential delay cell, the leakage power can be reduced with a lesser Phase Noise.
+In the Current Starved Differential VCO, the delay stages are replaced by differential delay cells. The current starved Differential VCO is shown in Fig. 3. The bottom two NMOS in the delay forms the pull-down network. M4, M5, M6, M7 forms one delay cell. The three number of delay cells are used to build a VCO to increase the oscillation frequency and gain. By using differential delay cell, the leakage power can be reduced with a lesser Phase Noise.
 </p>
 <p>
-Coming to the working of the current starved differential VCO when the control voltage is above threshold voltage the MOSFET M5 starts conducting and the current mirror MOSFETs M1, M2, M3, M4 comes into active region. Also the differential inverter switched on because the MOSFETs M1,M2,M3,M4 start conducting. In the CSDVCO the out+ -> in- -> out- ->  in+ -> out+ -> in+ form a loop and the other set forms another loop. The input keeps on inverting from one stage to the next and hence the VCO starts generating oscillations. And as the control voltage increases the frequency of oscillations also increases linearly as in the case of a conventional VCO.
+Coming to the working of the current starved differential VCO when the control voltage is above threshold voltage the MOSFET M1 starts conducting and the current mirror MOSFETs M1, M2, M3, M9, M15 comes into active region. Also the differential inverter switched on because the MOSFETs M3,M9,M15 starts conducting. In the CSDVCO the out+ -> in- -> out- ->  in+ -> out+ -> in+ form a loop and the other set forms another loop. The input keeps on inverting from one stage to the next and hence the VCO starts generating oscillations. And as the control voltage increases the frequency of oscillations also increases linearly as in the case of a conventional VCO.
 </p>
 <p align="center">
   <img src="Images/differential_end_CSVCO.png"></br>
