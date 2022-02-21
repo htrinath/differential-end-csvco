@@ -59,11 +59,11 @@ So, the final equation will look like,
            Ʈ = Ʈ1+ Ʈ2 = Ctotal*Vdd/Id
            f = Id/(N*Ctotal*Vdd )
            
-    Where, f = Frequency of oscillation of VCO,
-	   N = Number of stages of delay in VCO,
-	   Ctotal = Total internal capacitance of the circuit,
-	   Vdd = Supply voltage of the circuit,
-	   Id = ain Current of the MOSFET
+    Where,	f = Frequency of oscillation of VCO,
+	   	N = Number of stages of delay in VCO,
+	   	Ctotal = Total internal capacitance of the circuit,
+	   	Vdd = Supply voltage of the circuit,
+	   	Id = ain Current of the MOSFET
 
 
 # Differential End Current Starved VCO:
@@ -137,6 +137,7 @@ One other thing we need to keep in mind is that here we have loop for which an i
   Fig. 9: Differential End Current Starved VCO Transient Analysis
 </p>
 The output frequency for the above graph is 'fout = 12.406 GHz' ('Vctrl = 500mV' and 'Vsupp = 1.2V')
+
 ### Parametric Sweep:
 This is basically used to plot any output attribute over varying input attribute. Specific to this design we are going to vary the control voltage and supply voltage to plot the varying frequency. For this, in the schematic we have to give a variable in the 'DC Voltage' parameter of the VDC components. Then add this variables in the Primewave under variables window and select 'sweep' in that window for each variable. In the parametric sweep window give the 'Start', 'Stop' and 'Step Size'. In the outputs add the function to calculate frequency and run the simulation to get the below output.
 <p align="center">
