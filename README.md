@@ -147,9 +147,9 @@ This is basically used to plot any output attribute over varying input attribute
   Fig. 11: Control Voltage vs Frequency graph for varying Supply Voltage.
 </p>
 
-# Netlist for the Circuit:
+# Netlist of the Circuit:
 
-Refer to the netlist of the circuit here: <a src='differential_end_CSVCO.cir.out'>Netlist</a>
+Refer to the netlist of the circuit here: <a href='differential_CSVCO.cir.out'>Netlist</a>
 
 # Observations:
 • Maximum frequency obtained for Supply voltage of 1.2V is around 22 GHz
