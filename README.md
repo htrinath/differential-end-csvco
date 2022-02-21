@@ -21,7 +21,7 @@ In VLSI System Design, Phase Locked Loop (PLL) is an essential building block fo
 
 Ring Oscillators can be realized in different ways. The frequency of oscillation is inversely proportional to the number of delay stages and delay time (or) propagation delay of each stage. The main disadvantage of normal ring VCO is that there is no different supply and control voltage, but supply voltage is considered as the control voltage. The drawback for normal ring VCO circuit is that as the supply voltage decreases the amplitude also decreases. To overcome this disadvantage, we are going for current starved technique. The current starved technique utilises the principle of current mirror. Current mirror is a technique where corresponding voltage is converted into current. The same magnitude of current is supplied to various branches as shown in figure.
 <p align="center">
-<img src="Images/current_mirror.PNG">
+<img src="Images/current_mirror.jpg">
   Fig. 1: Current Mirror 
 </p>
 As the control voltage increases, the amount of current flowing through circuit also increases, hence increasing the switching speed of delay cell, thereby increasing oscillation frequency.
@@ -68,7 +68,7 @@ So, the final equation will look like,
 
 The fig. 2 represents the differential inverter in which M1 and M2 form an inverter and M3 and M4 form another inverter. They act as two different inverters with the same power supply. We use this inverter as building block for forming the current starved differential VCO.
 <p align="center">
-  <img src="Images/differential_delay_cell.PNG">
+  <img src="Images/differential_delay_cell.jpg">
   Fig. 2: Differential Delay Cell
 </p>
 <p>
@@ -140,6 +140,11 @@ This is basically used to plot any output attribute over varying input attribute
 <p align="center">
   <img src="Images/parametric_sweep_one variable.PNG">
   Fig. 10: Control Voltage vs Frequency graph for 1.2V Supply Voltage.
+</p>
+
+<p align="center">
+  <img src="Images/parametric_sweep.PNG">
+  Fig. 10: Control Voltage vs Frequency graph for varying Supply Voltage.
 </p>
 
 # Netlist for the Circuit:
