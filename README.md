@@ -179,6 +179,7 @@ Refer to the netlist of the 5-Stage Differential End CSVCO here: <a href='Differ
 • As expected the bias current flowing into the delay stages is increasing as the the control voltage is increasing.</br>
 • Also as expected the VCO's output frequency is increasing as the control voltage is increasing.</br>
 • It can also be observed as the number of delay cells increase the frequency of oscillation decreases.</br>
+• One other thing to be noted is that in the parametric sweep we can see that the 5 stage VCO's graph is more linear as compared to the 3 stage VCO's graph which means that the 5 stage VCO is more stable and has better phase SNR.</br>
 
 # Author:
 • Trinath Harikrishna, B.Tech(ECE), SRM Institute of Science and Technology, Kattankulattur, Chennai-603203.
