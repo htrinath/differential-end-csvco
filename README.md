@@ -125,7 +125,11 @@ This component is used to convert the generated sine wave to a proper square pul
 The schematic of Differential End CSVCO has been created using the above cells and a few transistors as shown in the below figure.
 <p align="center">
   <img src="Images/differential_CSVCO_schematic.png"></br>
-  Fig. 8: Differential End Current Starved VCO Schematic
+  Fig. 8: 3-Stage Differential End Current Starved VCO Schematic
+</p>
+<p align="center">
+  <img src="Images/Differential_csvco_5stage_schematic.JPG"></br>
+  Fig. 9: 5-Stage Differential End Current Starved VCO Schematic
 </p>
 
 ## Simulations:
@@ -134,7 +138,7 @@ After creating and saving the schematic go to 'Tools' and open 'Primewave' to st
 One other thing we need to keep in mind is that here we have loop for which an initial condition needs to be declared. For that, we have to go to 'Setup -> Convergance aids' and select the net for which we want to set an initial condition.Then go to 'Simulations -> Netlist and Run' to generate a netlist and run the simulation to get the below output.
 <p align="center">
   <img src="Images/differential_CSVCO_tran.png"></br>
-  Fig. 9: Differential End Current Starved VCO Transient Analysis
+  Fig. 10: Differential End Current Starved VCO Transient Analysis
 </p>
 The output frequency for the above graph is 'fout = 12.406 GHz' ('Vctrl = 500mV' and 'Vsupp = 1.2V')
 
@@ -142,22 +146,39 @@ The output frequency for the above graph is 'fout = 12.406 GHz' ('Vctrl = 500mV'
 This is basically used to plot any output attribute over varying input attribute. Specific to this design we are going to vary the control voltage and supply voltage to plot the varying frequency. For this, in the schematic we have to give a variable in the 'DC Voltage' parameter of the VDC components. Then add this variables in the Primewave under variables window and select 'sweep' in that window for each variable. In the parametric sweep window give the 'Start', 'Stop' and 'Step Size'. In the outputs add the function to calculate frequency and run the simulation to get the below output.
 <p align="center">
   <img src="Images/parametric_sweep_one variable.png"></br>
-  Fig. 10: Control Voltage vs Frequency graph for 1.2V Supply Voltage.
+  Fig. 11: Control Voltage vs Frequency graph for 1.2V Supply Voltage in 3-stage Differential End CSVCO.
 </p>
 
 <p align="center">
   <img src="Images/parametric_sweep.png"></br>
-  Fig. 11: Control Voltage vs Frequency graph for varying Supply Voltage.
+  Fig. 12: Control Voltage vs Frequency graph for varying Supply Voltage in 3-stage Differential End CSVCO.
+</p>
+<p align="center">
+  <img src="Images/Differential_csvco_3stage_frequency_table.JPG"></br>
+  Fig. 13: Control Voltage and Frequency table for different Supply Voltage values in 3-stage Differential End CSVCO.
+</p>
+
+<p align="center">
+  <img src="Images/Differential_csvco_5stage_frequency_analysis.JPG"></br>
+  Fig. 14: Control Voltage vs Frequency graph for varying Supply Voltage in 5-stage Differential End CSVCO.
+</p>
+
+<p align="center">
+  <img src="Images/Differential_csvco_5stage_frequency_table.JPG"></br>
+  Fig. 15: Control Voltage and Frequency table for different Supply Voltage values in 5-stage Differential End CSVCO.
 </p>
 
 # Netlist of the Circuit:
 
-Refer to the netlist of the circuit here: <a href='differential_CSVCO.cir.out'>Netlist</a>
+Refer to the netlist of the 3-Stage Differential End CSVCO here: <a href='differential_CSVCO.cir.out'>Netlist</a>
+
+Refer to the netlist of the 5-Stage Differential End CSVCO here: <a href='Differential_csvco_5stage.cir.out'>Netlist</a>
 
 # Observations:
-• Maximum frequency obtained for Supply voltage of 1.2V is around 22 GHz</br>
+• Maximum frequency obtained for Supply voltage of 1.2V in 3-Stage Differential End CSVCO is around 22 GHz</br>
 • As expected the bias current flowing into the delay stages is increasing as the the control voltage is increasing.</br>
 • Also as expected the VCO's output frequency is increasing as the control voltage is increasing.</br>
+• It can also be observed as the number of delay cells increase the frequency of oscillation decreases.</br>
 
 # Author:
 • Trinath Harikrishna, B.Tech(ECE), SRM Institute of Science and Technology, Kattankulattur, Chennai-603203.
