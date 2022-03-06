@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Sun Feb 20 08:34:42 2022-->
+<file-format version="1.0" name="stateCategory">
+ <object type="saJobOptions" version="1" name="jobOptions">
+  <attribute type="giString" value="" name="dynConcurrent"/>
+  <attribute type="giString" value="default" name="dynExtraOptions"/>
+  <attribute type="giString" value="" name="dynJcName"/>
+  <attribute type="giString" value="" name="dynQueueList"/>
+  <attribute type="giString" value="Background" name="measurementsCalculationMode"/>
+  <attribute type="giString" value="" name="measurementsCommandPrefix"/>
+  <attribute type="giString" value="" name="measurementsDisplayName"/>
+  <attribute type="saDisplayEnum" value="Current" name="measurementsDisplayType"/>
+  <attribute type="giString" value="" name="measurementsDisplayWrapperScript"/>
+  <attribute type="giString" value="" name="measurementsGridOptions"/>
+  <attribute type="giString" value="SAEShell" name="measurementsJobClass"/>
+  <attribute type="giString" value="" name="netlistingGridOptions"/>
+  <attribute type="giString" value="Netlisting" name="netlistingJobClass"/>
+  <attribute type="giString" value="~/simulation" name="remoteSimDir"/>
+  <attribute type="giString" value="/SCRATCH" name="scratchDir"/>
+  <attribute type="giString" value="" name="simulationCommandPrefix"/>
+  <attribute type="giString" value="" name="simulationGridOptions"/>
+  <attribute type="giString" value="Simulation" name="simulationJobClass"/>
+  <attribute type="giBoolean" value="0" name="useScratchDir"/>
+  <attribute type="giBoolean" value="1" name="usedGlobalResource"/>
+  <attribute type="giBoolean" value="1" name="usedSimResource"/>
+ </object>
+</file-format>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Sun Feb 20 08:34:42 2022-->
+<file-format version="1.0" name="testSuiteData">
+ <comment></comment>
+ <tsCategory></tsCategory>
+ <version version="1.0"/>
+ <attribute type="giBoolean" value="1" name="supportsGlobalScope"/>
+</file-format>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Mon Feb 21 09:21:00 2022-->
+<file-format name="stateCategory" version="1.0">
+ <collection name="convergenceAids">
+  <object name="convergenceAids" type="saConvergenceAid" version="1">
+   <attribute name="enabled" type="giBoolean" value="1"/>
+   <attribute name="node" type="giString" value="/net3"/>
+   <attribute name="nodeType" type="giString" value="Initial Condition"/>
+   <attribute name="voltage" type="giString" value="0"/>
+  </object>
+  <object name="convergenceAids" type="saConvergenceAid" version="1">
+   <attribute name="enabled" type="giBoolean" value="1"/>
+   <attribute name="node" type="giString" value="/net2"/>
+   <attribute name="nodeType" type="giString" value="Initial Condition"/>
+   <attribute name="voltage" type="giString" value="0.8"/>
+  </object>
+ </collection>
+</file-format>

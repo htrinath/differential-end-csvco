@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Wed Feb 23 09:05:47 2022-->
+<file-format version="1.0" name="stateCategory">
+ <collection name="sweeps">
+  <object version="1" name="sweeps" type="saSweep">
+   <collection name="dataRows"/>
+   <attribute value="1" name="enabled" type="giBoolean"/>
+   <attribute value="sweep_1" name="name" type="giString"/>
+   <object version="1" name="sweepRange" type="saSweepRange">
+    <attribute value="" name="additionalPoints" type="giString"/>
+    <attribute value="" name="center" type="giString"/>
+    <attribute value="" name="linearPoints" type="giString"/>
+    <attribute value="StepSize" name="linearType" type="enLinearSweepType"/>
+    <attribute value="" name="logPoints" type="giString"/>
+    <attribute value="Decade" name="logType" type="enLogSweepType"/>
+    <attribute value="range_1" name="name" type="giString"/>
+    <attribute value="" name="poi" type="giString"/>
+    <attribute value="Start/Stop" name="rangeType" type="enSweepRangeType"/>
+    <attribute value="" name="span" type="giString"/>
+    <attribute value="0.4" name="start" type="giString"/>
+    <attribute value="0.1" name="stepSize" type="giString"/>
+    <attribute value="Linear" name="stepType" type="enSweepRangeStepType"/>
+    <attribute value="1.4" name="stop" type="giString"/>
+   </object>
+   <attribute value="singleVariable" name="sweepType" type="enSweepType"/>
+   <attribute value="0" name="useSimulatorSweep" type="giBoolean"/>
+   <attribute value="vctrl" name="variable" type="giString"/>
+  </object>
+  <object version="1" name="sweeps" type="saSweep">
+   <collection name="dataRows"/>
+   <attribute value="1" name="enabled" type="giBoolean"/>
+   <attribute value="sweep_2" name="name" type="giString"/>
+   <object version="1" name="sweepRange" type="saSweepRange">
+    <attribute value="" name="additionalPoints" type="giString"/>
+    <attribute value="" name="center" type="giString"/>
+    <attribute value="" name="linearPoints" type="giString"/>
+    <attribute value="StepSize" name="linearType" type="enLinearSweepType"/>
+    <attribute value="" name="logPoints" type="giString"/>
+    <attribute value="Decade" name="logType" type="enLogSweepType"/>
+    <attribute value="range_2" name="name" type="giString"/>
+    <attribute value="" name="poi" type="giString"/>
+    <attribute value="Start/Stop" name="rangeType" type="enSweepRangeType"/>
+    <attribute value="" name="span" type="giString"/>
+    <attribute value="0.7" name="start" type="giString"/>
+    <attribute value="0.1" name="stepSize" type="giString"/>
+    <attribute value="Linear" name="stepType" type="enSweepRangeStepType"/>
+    <attribute value="1.8" name="stop" type="giString"/>
+   </object>
+   <attribute value="singleVariable" name="sweepType" type="enSweepType"/>
+   <attribute value="0" name="useSimulatorSweep" type="giBoolean"/>
+   <attribute value="vsupp" name="variable" type="giString"/>
+  </object>
+ </collection>
+</file-format>

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Sun Feb 20 08:34:42 2022-->
+<file-format version="1.0" name="testSuiteData">
+ <comment></comment>
+ <tsCategory></tsCategory>
+ <version version="1.0"/>
+ <attribute type="giBoolean" value="1" name="supportsGlobalScope"/>
+ <testbenchOrder>
+  <testbench name="Testbench1"/>
+ </testbenchOrder>
+ <category name="chainingSetup">
+  <collection name="chainingSetup"/>
+ </category>
+ <category name="cornersSetup">
+  <collection name="cornersSetup"/>
+ </category>
+ <category name="dpoAreas">
+  <collection name="dpoAreas"/>
+ </category>
+ <category name="dpoObjectives">
+  <collection name="dpoObjectives"/>
+ </category>
+ <category name="dpoParams">
+  <collection name="dpoParams"/>
+ </category>
+ <category name="jobOptions">
+  <object type="saJobOptions" version="1" name="jobOptions">
+   <attribute type="giString" value="" name="dynConcurrent"/>
+   <attribute type="giString" value="default" name="dynExtraOptions"/>
+   <attribute type="giString" value="" name="dynJcName"/>
+   <attribute type="giString" value="" name="dynQueueList"/>
+   <attribute type="giString" value="Background" name="measurementsCalculationMode"/>
+   <attribute type="giString" value="" name="measurementsCommandPrefix"/>
+   <attribute type="giString" value="" name="measurementsDisplayName"/>
+   <attribute type="saDisplayEnum" value="Current" name="measurementsDisplayType"/>
+   <attribute type="giString" value="" name="measurementsDisplayWrapperScript"/>
+   <attribute type="giString" value="" name="measurementsGridOptions"/>
+   <attribute type="giString" value="SAEShell" name="measurementsJobClass"/>
+   <attribute type="giString" value="" name="netlistingGridOptions"/>
+   <attribute type="giString" value="Netlisting" name="netlistingJobClass"/>
+   <attribute type="giBoolean" value="0" name="overrideLocal"/>
+   <attribute type="giString" value="~/simulation" name="remoteSimDir"/>
+   <attribute type="giString" value="/SCRATCH" name="scratchDir"/>
+   <attribute type="giString" value="" name="simulationCommandPrefix"/>
+   <attribute type="giString" value="" name="simulationGridOptions"/>
+   <attribute type="giString" value="Simulation" name="simulationJobClass"/>
+   <attribute type="giBoolean" value="0" name="useScratchDir"/>
+   <attribute type="giBoolean" value="1" name="usedGlobalResource"/>
+   <attribute type="giBoolean" value="1" name="usedSimResource"/>
+  </object>
+ </category>
+ <category name="models">
+  <object type="saModelSetup" version="1" name="models">
+   <attribute type="giBoolean" value="1" name="includeGlobal"/>
+   <attribute type="giString" value="" name="includePath"/>
+   <collection name="modelFiles"/>
+   <collection name="modelGroupDefs"/>
+   <collection name="modelGroups"/>
+  </object>
+ </category>
+ <category name="reports">
+  <collection name="reports"/>
+ </category>
+ <category name="sweeps">
+  <collection name="sweeps"/>
+ </category>
+ <category name="temperature">
+  <object type="saTemperature" version="1" name="temperature">
+   <attribute type="giString" value="" name="description"/>
+   <attribute type="giBoolean" value="1" name="local"/>
+   <attribute type="giString" value="Celsius" name="unit"/>
+   <attribute type="giString" value="25" name="value"/>
+  </object>
+ </category>
+ <category name="variables">
+  <collection name="variables"/>
+ </category>
+ <category name="worstCaseAnalysis">
+  <collection name="worstCaseAnalysis"/>
+ </category>
+ <attribute type="giString" value="" name="description"/>
+ <attribute type="giString" value="session0" name="id"/>
+ <attribute type="giString" value="" name="preRunProcsSourceFile"/>
+ <attribute type="giString" value="~/simulation" name="resultsDir"/>
+ <attribute type="giString" value="" name="runModeHistoryName"/>
+ <attribute type="giString" value="" name="sequentialRunSetup"/>
+ <attribute type="giString" value="" name="statesDir"/>
+ <attribute type="giString" value="TestSuite9::/home/htrinath/sae_test_suites" name="uniqueName"/>
+</file-format>

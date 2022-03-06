@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Sat Feb 19 13:49:55 2022-->
+<file-format version="1.0" name="stateCategory">
+ <collection name="convergenceAids">
+  <object type="saConvergenceAid" version="1" name="convergenceAids">
+   <attribute type="giBoolean" value="1" name="enabled"/>
+   <attribute type="giString" value="/net9" name="node"/>
+   <attribute type="giString" value="Initial Condition" name="nodeType"/>
+   <attribute type="giString" value="0" name="voltage"/>
+  </object>
+ </collection>
+</file-format>

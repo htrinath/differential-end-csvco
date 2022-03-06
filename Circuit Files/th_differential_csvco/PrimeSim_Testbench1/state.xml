@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Sun Feb 20 09:34:49 2022-->
+<file-format name="stateData" version="1.0">
+ <attribute name="description" value="" type="giString"/>
+ <attribute name="design" value="th_analog_circuits/th_differential_csvco/schematic" type="dmCellView"/>
+ <attribute name="enabled" value="1" type="giBoolean"/>
+ <attribute name="enabledJobClass" value="0" type="giBoolean"/>
+ <attribute name="migratedSimulator" value="" type="giString"/>
+ <attribute name="name" value="Testbench1" type="giString"/>
+ <attribute name="openaccessState" value="//" type="dmCellView"/>
+ <attribute name="simulator" value="PrimeSim" type="giString"/>
+ <comment></comment>
+ <integration version="1"/>
+</file-format>

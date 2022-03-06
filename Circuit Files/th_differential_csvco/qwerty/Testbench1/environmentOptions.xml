@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Sun Feb 20 08:34:42 2022-->
+<file-format version="1.0" name="stateCategory">
+ <object type="saEnvironmentOptions" version="1" name="environmentOptions">
+  <attribute type="giString" value="Default" name="accuracyLevel"/>
+  <attribute type="giBoolean" value="0" name="auto"/>
+  <attribute type="giString" value="" name="commandLineOptions"/>
+  <attribute type="giBoolean" value="0" name="enableParallelSim"/>
+  <attribute type="giBoolean" value="0" name="ignoreParasitics"/>
+  <attribute type="giString" value="" name="includePath"/>
+  <attribute type="giString" value="HSPICE" name="netlistLanguage"/>
+  <attribute type="giInt" value="1" name="numProcesses"/>
+  <attribute type="giString" value="wdf" name="outputDataFormat"/>
+  <attribute type="giString" value="hspice hspiceD" name="stopViewList"/>
+  <attribute type="giString" value="hspice hspiceD schematic spice veriloga" name="switchViewList"/>
+  <attribute type="giBoolean" value="1" name="use64Bit"/>
+ </object>
+</file-format>

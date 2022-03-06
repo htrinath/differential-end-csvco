@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Sun Feb 20 08:34:42 2022-->
+<file-format version="1.0" name="stateData">
+ <attribute type="giString" value="" name="description"/>
+ <attribute type="dmCellView" value="th_analog_circuits/th_differential_csvco/schematic" name="design"/>
+ <attribute type="giBoolean" value="1" name="enabled"/>
+ <attribute type="giBoolean" value="0" name="enabledJobClass"/>
+ <attribute type="giString" value="" name="migratedSimulator"/>
+ <attribute type="giString" value="Testbench1" name="name"/>
+ <attribute type="dmCellView" value="//" name="openaccessState"/>
+ <attribute type="giString" value="PrimeSim" name="simulator"/>
+ <comment>Testbench of 'qwerty' test suite.</comment>
+ <integration version="1"/>
+</file-format>

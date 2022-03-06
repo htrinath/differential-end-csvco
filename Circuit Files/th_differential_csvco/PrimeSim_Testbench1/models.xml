@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Sun Feb 20 09:34:49 2022-->
+<file-format name="stateCategory" version="1.0">
+ <object name="models" version="1" type="saModelSetup">
+  <attribute name="includeGlobal" value="1" type="giBoolean"/>
+  <attribute name="includePath" value="/PDK/SAED_PDK32nm/hspice" type="giString"/>
+  <collection name="modelFiles">
+   <object name="modelFiles" version="1" type="saModelFile">
+    <attribute name="enabled" value="1" type="giBoolean"/>
+    <attribute name="filename" value="saed32nm.lib" type="giString"/>
+    <attribute name="section" value="TT" type="giString"/>
+   </object>
+  </collection>
+  <collection name="modelGroupDefs"/>
+  <collection name="modelGroups"/>
+ </object>
+</file-format>

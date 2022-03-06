@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Sun Feb 20 08:34:42 2022-->
+<file-format version="1.0" name="stateCategory">
+ <object type="saSaveOptions" version="1" name="saveOptions">
+  <attribute type="giString" value="" name="emTStart"/>
+  <attribute type="giString" value="" name="emTStop"/>
+  <attribute type="giBoolean" value="0" name="enableEM"/>
+  <attribute type="giBoolean" value="0" name="enableVDRC"/>
+  <attribute type="giBoolean" value="0" name="power"/>
+  <attribute type="giString" value="level" name="save"/>
+  <attribute type="giInt" value="1" name="saveLevel"/>
+  <attribute type="giString" value="selected" name="subcktCurrents"/>
+  <attribute type="giInt" value="1" name="subcktCurrentsLevel"/>
+  <attribute type="giString" value="selected" name="terminalCurrents"/>
+  <attribute type="giInt" value="1" name="terminalCurrentsLevel"/>
+  <attribute type="giBoolean" value="0" name="totalPower"/>
+  <attribute type="giString" value="" name="vdrcTStart"/>
+  <attribute type="giString" value="" name="vdrcTStop"/>
+ </object>
+</file-format>
